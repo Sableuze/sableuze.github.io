@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Landie</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+
+        <div class="header__content _container">
+
+            <div class="header__menu menu">
+                <div class="menu__icon icon-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <div class="logo"><img src="img/icons/logosvg.svg" alt=""/></div>
+                    <div class="left-elem">
+                        <div class="travel dropdown">
+                            <button class="dropdown-toggle link" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                More travel
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item link" href="#">Action</a>
+                                <a class="dropdown-item link" href="#">Another action</a>
+                                <a class="dropdown-item link" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <ul class="menu__list">
+                        <li>
+                            <div class="language dropdown">
+                                <img src="img/icons/globe.svg" alt=""/>
+                                <button class="dropdown-toggle link" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    English
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item link" href="#">Russian</a>
+                                    <a class="dropdown-item link" href="#">Spain</a>
+                                    <a class="dropdown-item link" href="#">Greece</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="currency dropdown ">
+                                <img src="img/icons/dollar.svg" alt=""/>
+                                <button class="dropdown-toggle link" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    USD
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item link" href="#">RUS</a>
+                                    <a class="dropdown-item link" href="#">SPA</a>
+                                    <a class="dropdown-item link" href="#">GRE</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" class="menu__link link">Support</a></li>
+                        <li><a href="#" class="menu__link link">Trips</a></li>
+                        <li><a href="#" class="menu__link link sign button">Sign in</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <aside class="booking__pretext">
+
+                <div class="booking__title title">The Greatest <br/>
+                    Way to The Beach
+                </div>
+                <p class="booking__text text">Bring daydreams of sun-kissed skin and salty hair to reality</p>
+                <button class="button button-light"><a class="button-link link-blue">Book now</a></button>
+            </aside>
+            <section class="booking__form">
+                <div class="form-container">
+                    <div class="bar">
+                        <div class="labels">
+                            <label class="bar__label _active" data-tab="tab-1"><i
+                                    class="fas fa-building"></i>
+                                <p>Stays</p></label>
+                            <label class="bar__label" data-tab="tab-2"><i class="fas fa-plane"></i>
+                                <p>Flights</p></label>
+                            <label class="bar__label" data-tab="tab-3"><i class="fas fa-car"></i>
+                                <p>Cars</p></label>
+                            <label class="bar__label" data-tab="tab-4"><i
+                                    class="fas fa-briefcase"></i>
+                                <p>Package Deals</p></label>
+                            <label class="bar__label" data-tab="tab-5"><i
+                                    class="fas fa-ticket-alt"></i>
+                                <p>Experiences Tickets</p></label>
+                            <label class="bar__label" data-tab="tab-6"><i class="fas fa-ship"></i>
+                                <p>Cruises</p></label>
+                        </div>
+                        <button class="button"><a href="#">Recent Search</a></button>
+                    </div>
+                    <form method="post" class="tab-form">
+                        <div class="stays" data-tab-content id="tab-1">
+                            <ul class="stays__items form__menu">
+                                <li class="stays__item form__block">
+                                    <label class="input__title">Location</label>
+                                    <input class="input" type="text" placeholder='Where are you going?'/>
+                                </li>
+                                <li class="stays__item form__block">
+                                    <label class="input__title">Check in</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="inDate"
+                                           placeholder="Check in"/>
+                                </li>
+                                <li class="stays__item form__block">
+                                    <label class="input__title">Check out</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="outDate"
+                                           placeholder="Check out"/>
+                                </li>
+                                <li class="stays__item form__block">
+                                    <label class="input__title">Guests & Rooms</label>
+                                    <input class="input" type="text" placeholder="How many guests and rooms?"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flights _hidden" data-tab-content id="tab-2">
+                            <ul class="flights__items form__menu">
+                                <li class="flights__item form__block">
+                                    <label class="input__title">Flight</label>
+                                    <select class="input">
+                                        <option value="placeholder" class="select-placeholder" selected>Choose the
+                                            flight
+                                        </option>
+                                        <option value="MD3" class="option">MD3</option>
+                                        <option value="MD4" class="option">MD4</option>
+                                        <option value="ZE6" class="option">ZE6</option>
+                                        <option value="FA2" class="option">FA2</option>
+                                    </select>
+
+                                </li>
+                                <li class="flights__item form__block">
+                                    <label class="input__title">Getting on day</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="fromDate"
+                                           placeholder="Choose the day"/>
+                                </li>
+                                <li class="flights__item form__block">
+                                    <label class="input__title">Getting off day</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="toDate"
+                                           placeholder="Choose the day"/>
+                                </li>
+                                <li class="flights__item form__block">
+                                    <label class="input__title">Number of persons</label>
+                                    <input class="input" type="text" placeholder="How many seats?"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cars _hidden" data-tab-content id="tab-3">
+                            <ul class="cars__items form__menu">
+                                <li class="cars__item form__block">
+                                    <label class="input__title">Location</label>
+                                    <input class="input" type="text" placeholder='CARS'/>
+                                </li>
+                                <li class="cars__item form__block">
+                                    <label class="input__title">Check in</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="inDate3"
+                                           placeholder="CARS"/>
+                                </li>
+                                <li class="cars__item form__block">
+                                    <label class="input__title">Check out</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="outDate3"
+                                           placeholder="CARS"/>
+                                </li>
+                                <li class="cars__item form__block">
+                                    <label class="input__title">Guests & Rooms</label>
+                                    <input class="input" type="text" placeholder="CARS"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Package Deals _hidden" data-tab-content id="tab-4">
+                            <ul class="package__items form__menu">
+                                <li class="package__item form__block">
+                                    <label class="input__title">Location</label>
+                                    <input class="input" type="text" placeholder='PACKAGE'/>
+                                </li>
+                                <li class="package__item form__block">
+                                    <label class="input__title">Check in</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="inDate4"
+                                           placeholder="PACKAGE"/>
+                                </li>
+                                <li class="package__item form__block">
+                                    <label class="input__title">Check out</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="outDate4"
+                                           placeholder="PACKAGE"/>
+                                </li>
+                                <li class="package__item form__block">
+                                    <label class="input__title">Guests & Rooms</label>
+                                    <input class="input" type="text" placeholder="PACKAGE"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="experiences__ticket _hidden" data-tab-content id="tab-5">
+                            <ul class="experiences__ticket__items form__menu">
+                                <li class="experiences__ticket__item form__block">
+                                    <label class="input__title">Location</label>
+                                    <input class="input" type="text" placeholder='experiences__ticket'/>
+                                </li>
+                                <li class="experiences__ticket__item form__block">
+                                    <label class="input__title">Check in</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="inDate5"
+                                           placeholder="experiences__ticket"/>
+                                </li>
+                                <li class="experiences__ticket__item form__block">
+                                    <label class="input__title">Check out</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="outDate5"
+                                           placeholder="experiences__ticket"/>
+                                </li>
+                                <li class="experiences__ticket__item form__block">
+                                    <label class="input__title">Guests & Rooms</label>
+                                    <input class="input" type="text" placeholder="experiences__ticket"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cruises _hidden " data-tab-content id="tab-6">
+                            <ul class="cruises__items form__menu">
+                                <li class="cruises__item form__block">
+                                    <label class="input__title">Location</label>
+                                    <input class="input" type="text" placeholder='cruises'/>
+                                </li>
+                                <li class="cruises__item form__block">
+                                    <label class="input__title">Check in</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="inDate6"
+                                           placeholder="cruises"/>
+                                </li>
+                                <li class="cruises__item form__block">
+                                    <label class="input__title">Check out</label>
+                                    <input class="input" type="text" onfocus="(this.type='date')" id="outDate6"
+                                           placeholder="cruises"/>
+                                </li>
+                                <li class="cruises__item form__block">
+                                    <label class="input__title">Guests & Rooms</label>
+                                    <input class="input" type="text" placeholder="cruises"/>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="alert"><i class="fas fa-exclamation-triangle"></i>
+                            <p>Check the updates about travel health policy during the pandemic
+                                COVID-19 in <a href="#" class="inserted-link">Traveling Policy Updates</a></p></div>
+
+
+                    </form>
+                </div>
+
+            </section>
+        </div>
+    </header>
+
+
+    <main class="page">
+        <div class="page__container">
+            <section class="help">
+                <div class="help__container _container">
+                    <div class="lng-help__title subTitle">
+                        Here to help keep you on the move
+
+                    </div>
+                    <div class="ways__to__help">
+                        <a href="#" class="way__card">
+                            <img src="https://via.placeholder.com/100x100/DFFBD2" alt=""/>
+                            <div class="way__content">
+                                <div class="lng-way__title">Use a credit or coupon</div>
+                                <div class="lng-way__text">Apply a coupon code or credit to a
+                                    new trip
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="way__card">
+                            <img src="https://via.placeholder.com/100x100/ECF2FF" alt=""/>
+                            <div class="way__content">
+                                <div class="lng-way__title">Change or cancel trip</div>
+                                <div class="lng-way__text">Make updates to your itinerary or
+                                    cancel a booking
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="way__card">
+                            <img src="https://via.placeholder.com/100x100/FBE6D2" alt=""/>
+                            <div class="way__content">
+                                <div class="lng-way__title">Track your refund</div>
+                                <div class="lng-way__text">Track a status of a refund currently
+                                    in progress
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="cities">
+                <div class="cities__container _container">
+                    <aside class="cities__pretext">
+                        <div class="lng-cities__title subTitle">City breaks to fit every style</div>
+                        <p class="lng-cities__text text">Find the best travelling destination that fit you a lot with
+                            all the new
+                            experiences and things you adore so much</p>
+                        <button class="button "><a class="lng-cities-link button-link ">Explore more</a></button>
+                    </aside>
+                    <div class="cities__items">
+
+                        <a href="#" class="cities__item">
+                            <div class="cities__item__img _ibg">
+                                <img src="img/citites/01.png" alt="a man with a surfboard"/>
+                                <div class="lng-cities__item__img__description">Cities for beach lovers</div>
+                            </div>
+                        </a>
+                        <a href="#" class="cities__item">
+                            <div class="cities__item__img _ibg">
+                                <img src="img/citites/02.png" alt="a camp on a hill"/>
+                                <div class="lng-cities__item__img__description">Cities for camping
+                                    activities
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="cities__item">
+                            <div class="cities__item__img _ibg">
+                                <img src="img/citites/03.png" alt="a man and a woman cooking"/>
+                                <div class="lng-cities__item__img__description">Cities for foodies</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <section class="trips">
+                <div class="trips__container _container">
+                    <div class="lng-trips__title subTitle">Trips made easier for everyone, everywhere</div>
+                    <div class="trips__items">
+                        <a href="#" class="trips__item">
+                            <div class="trips__item__img">
+                                <img src="img/trips/01.svg" alt="a man on a sofa"/>
+                            </div>
+                            <div class="lng-trips__description">
+                                <div class="lng-trips__description__title">Book and relax</div>
+                                <div class="lng-trips__description__text text">Flexible options let you spend more time
+                                    making plans and less time worrying when
+                                    things change.
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="trips__item">
+                            <div class="trips__item__img">
+                                <img src="img/trips/02.svg" alt="traveler with a case"/>
+                            </div>
+                            <div class="lng-trips__description">
+                                <div class="lng-trips__description__title">Travel smart checklist</div>
+                                <div class="lng-trips__description__text text">Ready for your next great vacation? use
+                                    this
+                                    cheatsheet to ensure you’ve covered the
+                                    esentials.
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="trips__item">
+                            <div class="trips__item__img">
+                                <img src="img/trips/03.svg" alt="woman with boxes"/>
+                            </div>
+                            <div class="lng-trips__description">
+                                <div class="lng-trips__description__title">Point hack your trip</div>
+                                <div class="lng-trips__description__text text">Earn Expedia Rewards points on top of any
+                                    credit card or airline program points when
+                                    you book.
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="ideas">
+                <div class="ideas__container _container">
+                    <div class="lng-ideas__title subTitle">
+                        Ideas for your future trips
+                    </div>
+                    <a href=""></a>
+                    <div class="ideas__items">
+                        <a href="#" class="ideas__item long beach">
+
+                            <div class="ideas__item__description">
+                                <div class="description__title">Short Runaway</div>
+                                <div class="description__text">Explore the great private resort for
+                                    your refreshing need
+                                </div>
+                                <i class="fas fa-play"></i>
+
+                            </div>
+
+                        </a>
+
+                        <a href="#" class="ideas__item long camping">
+
+                            <div class="ideas__item__description bottom ">
+                                <div class="description__title">Great Camping</div>
+                                <div class="description__text">Explore the great private resort for
+                                    your refreshing need
+                                    <i class="fas fa-play"></i>
+
+                                </div>
+                            </div>
+
+                        </a>
+                        <a href="#" class="ideas__item family__trips">
+
+                            <div class="ideas__item__description ">
+                                <div class="description__title">Family Trips</div>
+                                <div class="description__text"></div>
+                                <i class="fas fa-play"></i>
+                            </div>
+
+                        </a>
+                        <a href="#" class="ideas__item winter">
+                            <div class="ideas__item__description ">
+                                <div class="description__title">Winter Vacation</div>
+                                <div class="description__text"></div>
+                                <i class="fas fa-play"></i>
+                            </div>
+
+
+                        </a>
+                        <a href="#" class="ideas__item cruising">
+                            <div class="ideas__item__description ">
+                                <div class="description__title">Fun Cruising</div>
+                                <div class="description__text"></div>
+                                <div class="play"></div>
+                            </div>
+
+
+                        </a>
+                        <a href="#" class="ideas__item castle">
+                            <div class="ideas__item__description ">
+                                <div class="description__title">Exciting Theme
+                                    Park
+                                </div>
+                                <div class="description__text"></div>
+                            </div>
+
+
+                        </a>
+                    </div>
+                    <button class="ideas__button button"><a class="button-link" href="#">Explore more ideas</a></button>
+
+                </div>
+            </section>
+            <section class="phone-app">
+                <div class="phone-app__container _container">
+                    <div class="phone-app__app">
+                        <div class="phone-app__app__image">
+                            <img src="img/phone__app/phone.png" alt=""/>
+
+                        </div>
+                    </div>
+
+                    <aside class="phone-app__download">
+                        <div class="phone-app__title subTitle">Supercharge your planning
+                            power
+                        </div>
+                        <p class="phone-app__text text">Use the Expedia app to organize your entire trip and find
+                            mobile-
+                            exclusive deals on the go.</p>
+                        <div class="phone-app__download__buttons">
+                            <a href="#" class="phone-app-link"><img
+                                    src="img/phone__app/icons/appstore.svg" alt=""/></a>
+                            <a href="#" class="phone-app-link"><img
+                                    src="img/phone__app/icons/pmarket.svg" alt=""/></a>
+                        </div>
+                    </aside>
+                </div>
+
+            </section>
+            <section class="deals">
+                <div class="deals__container _container">
+                    <aside class="deals__pretext">
+                        <div class="deals__pretext__title subTitle">Flight deals on Expedia</div>
+                        <p class="deals__pretext__text text">Get to where you’re going for less with these great
+                            fare</p>
+                        <button class="button button-light"><a class="button-link" href="#">Explore now</a></button>
+                    </aside>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links _container">
+                <div class="links__col social__media">
+                    <div class="logo"><img src="img/footer/footer_logo.svg" alt="footer logo"></div>
+                    <ul class="socials">
+                        <li><a href="#">
+                            <img src="img/icons/facebook.svg" alt="facebook">
+                            <p class="socials__name">Facebook</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/icons/instagram.svg" alt="instagram">
+                            <p class="socials__name">Instagram</p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/icons/twitter.svg" alt="instagram">
+                            <p class="socials__name">Twitter</p>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="links__col company">
+                    <div class="links__title">Company</div>
+                    <ul class="links__menu company__menu">
+                        <li><a href="#" class="links__link">About</a></li>
+                        <li><a href="#" class="links__link">Jobs</a></li>
+                        <li><a href="#" class="links__link">List your property</a></li>
+                        <li><a href="#" class="links__link">Partnership</a></li>
+                        <li><a href="#" class="links__link">Newsroom</a></li>
+                        <li><a href="#" class="links__link">Investor Relations</a></li>
+                        <li><a href="#" class="links__link">Advertising</a></li>
+                    </ul>
+                </div>
+                <div class="links__col explore">
+                    <div class="links__title">Explore</div>
+                    <ul class="links__menu explore__menu">
+                        <li><a href="#" class="links__link">United States of America travel guide</a></li>
+                        <li><a href="#" class="links__link">Hotels in United States of America</a></li>
+                        <li><a href="#" class="links__link">Vacation rentals in United States of
+                            America</a></li>
+                        <li><a href="#" class="links__link">Vacation packages in United States of
+                            America</a></li>
+                        <li><a href="#" class="links__link">Domestic Flights</a></li>
+                        <li><a href="#" class="links__link">Car rentals in United States of America</a></li>
+                        <li><a href="#" class="links__link">All accommodation types</a></li>
+                    </ul>
+                </div>
+                <div class="links__col terms">
+                    <div class="links__title">Terms & Policies</div>
+                    <ul class="links__menu terms__menu">
+                        <li><a href="#" class="links__link">Privacy policy</a></li>
+                        <li><a href="#" class="links__link">Terms of use</a></li>
+                        <li><a href="#" class="links__link">Expedia Rewards Terms</a></li>
+                        <li><a href="#" class="links__link">Accessibility</a></li>
+                        <li><a href="#" class="links__link">Do not sell my personal information</a></li>
+                    </ul>
+                </div>
+                <div class="links__col links__help">
+                    <div class="links__title">Help</div>
+                    <ul class="links__menu help__menu">
+                        <li><a href="#" class="links__link">Support</a></li>
+                        <li><a href="#" class="links__link">Cancel your hotel or vacational rental
+                            booking</a></li>
+                        <li><a href="#" class="links__link">Cancel your flight</a></li>
+                        <li><a href="#" class="links__link">Refund timelines, politics & processes</a></li>
+                        <li><a href="#" class="links__link">Use an expedia coupon</a></li>
+                        <li><a href="#" class="links__link">Coronavirus Disease (COVID-19)</a></li>
+                        <li><a href="#" class="links__link">International travel documents</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="copyright ">
+                <p>Expedia, Inc. is not responsible for content on external Web sites.
+                </p>
+                <p>© 2021 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo
+                    are trademarks or registered trademarks of Expedia, Inc. CST# 2029030-50</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/customScripts.js"></script>
+</body>
+</html>
