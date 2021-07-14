@@ -589,7 +589,7 @@ textarea.input {
     transform: scale(1.1);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .button:hover {
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -618,7 +618,7 @@ textarea.input {
     transform: scale(1.1);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .link:hover {
         color: #FF6464;
     }
@@ -1416,7 +1416,7 @@ body.ie ._ibg img {
     transition: 0.4s;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .footer .footer__links .links__col .links__menu li:hover {
         -webkit-transform: translateX(5px);
         -ms-transform: translateX(5px);
@@ -1578,7 +1578,7 @@ body.ie ._ibg img {
     transition: 0.4s;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 
 
     .cities .cities__items .cities__item:hover {
@@ -1638,7 +1638,7 @@ body.ie ._ibg img {
     transition: 0.4s;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .trips .trips__items .trips__item:hover {
         -webkit-transform: scale(1, 1.1);
         -ms-transform: scale(1, 1.1);
@@ -1722,7 +1722,7 @@ body.ie ._ibg img {
     transition: 0.4s;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .ideas .ideas__items .ideas__item:hover {
         -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
@@ -1918,7 +1918,7 @@ body.ie ._ibg img {
     padding: 90px 0 0 0;
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: 768.98px) {
     .footer .social__media {
         -ms-grid-row-span: 3;
         grid-row: span 3;
@@ -2065,7 +2065,7 @@ body.ie ._ibg img {
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
     .title {
         font-size: 32px;
     }
@@ -2263,7 +2263,7 @@ body.ie ._ibg img {
     }
 }
 
-@media (max-width: 767.98px) and (max-width: 650px) {
+@media (max-width: 768.98px) and (max-width: 650px) {
     .help .help__container {
         padding: 20px 2% 100px;
     }
