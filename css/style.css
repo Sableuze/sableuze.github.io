@@ -1016,12 +1016,14 @@ body.ie ._ibg img {
 
 ._no-webp .header {
     background: url("../img/bg.png") 0 0 no-repeat;
+    background-size: cover !important;
+
 }
 
 .header {
     z-index: 100;
     background: url("../img/bg.png") 0 0 no-repeat;
-    background-size: cover;
+    background-size: cover !important;
     padding: 30px 30px 108px;
 }
 
@@ -1875,10 +1877,12 @@ body.ie ._ibg img {
 
 ._no-webp .deals {
     background: url("../img/flight/flight_bg.png") 0 0 no-repeat;
+    background-size: cover !important;
+
 }
 
 .deals {
-    background-size: cover;
+    background-size: cover !important;
 }
 
 .deals .deals__container {
