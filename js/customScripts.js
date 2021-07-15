@@ -22,8 +22,7 @@ inputSelect.forEach(function (item) {
         let parent = this.closest(".form__block");
         if (this.classList.contains("_active")) {
             parent.classList.add("_focus");
-        }
-        else {
+        } else {
             parent.classList.remove("_focus")
         }
 
@@ -38,36 +37,83 @@ inputSelect.forEach(function (item) {
 //     }
 
 
-    const labelCondition = document.querySelectorAll("[data-tab]");
+const labelCondition = document.querySelectorAll("[data-tab]");
 
-    const contentBoxes = document.querySelectorAll("[data-tab-content]")
+const contentBoxes = document.querySelectorAll("[data-tab-content]")
 
-    labelCondition.forEach(function (item) {
-        item.addEventListener("click", function () {
-            labelCondition.forEach(function (removeClass) {
-                removeClass.classList.remove("_active");
-            })
+labelCondition.forEach(function (item) {
+    item.addEventListener("click", function () {
+        labelCondition.forEach(function (removeClass) {
+            removeClass.classList.remove("_active");
+        })
 
-            this.classList.toggle("_active");
-            contentBoxes.forEach(function (item) {
-                item.classList.add("_hidden")
-            })
+        this.classList.toggle("_active");
+        contentBoxes.forEach(function (item) {
+            item.classList.add("_hidden")
+        })
 
-            let contentBox = document.querySelector("#" + this.dataset.tab);
-            contentBox.classList.remove("_hidden")
+        let contentBox = document.querySelector("#" + this.dataset.tab);
+        contentBox.classList.remove("_hidden")
 
-        });
     });
+});
+
+// const animItems = document.querySelectorAll("._animation-item")
+//
+// if (animItems.length > 0) {
+//     window.addEventListener("scroll", animOnScroll);
+//
+//     function animOnScroll() {
+//         for (let i = 0; i < animItems.length; i++) {
+//             const animItem = animItems[i];
+//             const animItemHeight = animItem.offsetHeight;
+//             const animItemOffset = offset(animItem).top;
+//             const animStart = 4;
+//
+//
+//             let animItemPoint = window.innerHeight - animItemHeight / animStart;
+//             if (animItemHeight > window.innerHeight) {
+//                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
+//             }
+//
+//             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemPoint + animItemHeight)) {
+//                 animItem.classList.add("_animation-active")
+//             }
+//             // else {
+//             //     if (!animItem.classList.contains("_anim-no-hide")){
+//             //     animItem.classList.remove("_active")
+//             // }}
+//             //
+//
+//         }
+//
+//
+//     }
+//
+//     setTimeout(() => {
+//         animOnScroll()
+//     }, 300);
+// }
+document.addEventListener('DOMContentLoaded', () => {
+
+    const scrollItems = document.querySelectorAll('._animation-item');
+
+    const scrollAnimation = () => {
+        let windowCenter = (window.innerHeight / 2) + window.scrollY;
+        console.log(windowCenter)
+        scrollItems.forEach(el => {
+            let scrollOffset = el.offsetTop + (el.offsetHeight / 4);
+            if (windowCenter >= scrollOffset) {
+                el.classList.add('_animation-active');
+            }
+        });
+    };
 
 
-function ibg(){
 
-    let ibg=document.querySelectorAll("._ibg");
-    for (var i = 0; i < ibg.length; i++) {
-        if(ibg[i].querySelector('img')){
-            ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
-        }
-    }
-}
 
-ibg();
+    scrollAnimation();
+    window.addEventListener('scroll', () => {
+        scrollAnimation();
+    });
+});
