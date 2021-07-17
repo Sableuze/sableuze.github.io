@@ -65,7 +65,6 @@ if (location.hash) {
 //=================
 //Menu
 let iconMenu = document.querySelector(".icon-menu");
-console.log(iconMenu)
 if (iconMenu != null) {
     let delay = 500;
     let menuBody = document.querySelector(".menu__body");
