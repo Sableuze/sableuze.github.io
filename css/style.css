@@ -2211,7 +2211,7 @@ body.ie ._ibg img {
     top: 0;
     left: 0;
     overflow: auto;
-    padding: 40px 10px 100%;
+    padding: 15px 10px 100px;
     background: rgba(49, 184, 174, 0.8);
     -webkit-transform: translate(0px, -100%);
         -ms-transform: translate(0px, -100%);
