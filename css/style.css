@@ -1918,9 +1918,9 @@ body.ie ._ibg img {
   }
 
   .cities .cities__items .cities__item:hover {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.2) !important;
+        -ms-transform: scale(1.2) !important;
+            transform: scale(1.2) !important;
   }
 
   .trips .trips__items .trips__item:hover {
