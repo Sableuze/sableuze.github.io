@@ -133,26 +133,26 @@ buttonDismiss.forEach(function (item) {
     })
 })
 
-//ПРОВЕРКА ГОРИЗОНАТЛЬНОЙ ПРОКРУТКИ
-function isScrollable(ele) {
-
-    const cntWidth = ele.closest(".bar").scrollWidth
-    // Compare the height to see if the element has scrollable content
-    const hasScrollableContent = ele.scrollWidth > cntWidth;
-    console.log(cntWidth)
-    console.log(ele.scrollWidth)
-
-
-}
-
-
-setTimeout(function () {
-    try {
-        isScrollable(document.querySelector(".labels"))
-    } catch (error) {
-        console.log(error)
-    }
-}, 1000)
-
-
+// //ПРОВЕРКА ГОРИЗОНАТЛЬНОЙ ПРОКРУТКИ
+// function isScrollable(ele) {
+//
+//     const cntWidth = ele.closest(".bar").scrollWidth
+//     // Compare the height to see if the element has scrollable content
+//     const hasScrollableContent = ele.scrollWidth > cntWidth;
+//     console.log(cntWidth)
+//     console.log(ele.scrollWidth)
+//
+//
+// }
+//
+//
+// setTimeout(function () {
+//     try {
+//         isScrollable(document.querySelector(".labels"))
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }, 1000)
+//
+//
 
