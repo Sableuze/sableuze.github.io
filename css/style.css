@@ -1014,7 +1014,7 @@ body.ie ._ibg img {
 }
 
 ._no-webp .header{
-  background: url("../img/bg.png") 0 0 no-repeat; }
+  background: url("../img/bg.webp") 0 0 no-repeat; }
 
 .header {
   z-index: 100;
@@ -1741,22 +1741,22 @@ body.ie ._ibg img {
 }
 
 ._no-webp .ideas .ideas__items .beach{
-  background: url("../img/ideas/01.png"); }
+  background: url("../img/ideas/01.webp"); }
 
 ._no-webp .ideas .ideas__items .camping{
-  background: url("../img/ideas/02.png"); }
+  background: url("../img/ideas/02.webp"); }
 
 ._no-webp .ideas .ideas__items .family__trips{
-  background: url("../img/ideas/03.png"); }
+  background: url("../img/ideas/03.webp"); }
 
 ._no-webp .ideas .ideas__items .winter{
-  background: url("../img/ideas/04.png"); }
+  background: url("../img/ideas/04.webp"); }
 
 ._no-webp .ideas .ideas__items .cruising{
-  background: url("../img/ideas/05.png"); }
+  background: url("../img/ideas/05.webp"); }
 
 ._no-webp .ideas .ideas__items .castle{
-  background: url("../img/ideas/06.png"); }
+  background: url("../img/ideas/06.webp"); }
 
 .ideas .ideas__button {
   -ms-flex-item-align: center;
@@ -1787,7 +1787,7 @@ body.ie ._ibg img {
 }
 
 ._no-webp .phone-app .phone-app__app{
-  background: url("../img/phone__app/phone_bg.png") no-repeat center; }
+  background: url("../img/phone__app/phone_bg.webp") no-repeat center; }
 
 .phone-app .phone-app__app {
   background-size: contain;
@@ -1834,7 +1834,7 @@ body.ie ._ibg img {
 }
 
 ._no-webp .deals{
-  background: url("../img/flight/flight_bg.png") 0 0 no-repeat; }
+  background: url("../img/flight/flight_bg.webp") 0 0 no-repeat; }
 
 .deals {
   background-size: cover !important;
@@ -1924,27 +1924,27 @@ body.ie ._ibg img {
   }
 
   .trips .trips__items .trips__item:hover {
-    -webkit-transform: scale(1, 1.1);
-        -ms-transform: scale(1, 1.1);
-            transform: scale(1, 1.1);
+    -webkit-transform: scale(1, 1.1) !important;
+        -ms-transform: scale(1, 1.1) !important;
+            transform: scale(1, 1.1) !important;
   }
 
   .ideas .ideas__items .ideas__item:hover {
-    -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.9) !important;
+        -ms-transform: scale(0.9) !important;
+            transform: scale(0.9) !important;
   }
 
   .phone-app .phone-app__app .phone-app__app__image:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.1) !important;
+        -ms-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
   }
 
   .phone-app .phone-app__download .phone-app__download__buttons .phone-app-link:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.1) !important;
+        -ms-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
   }
 }
 
